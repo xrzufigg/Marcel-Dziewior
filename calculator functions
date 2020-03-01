@@ -1,0 +1,35 @@
+print('-----------\nkalkulator\n-----------')
+def ppkwadrat(a):
+    c = a * a
+    return c
+
+def pptrojkat(a ,h):
+    c = (a * h) / 2
+    return c
+
+def ppromb(e, f):
+    c = (e * f)/2
+    return c 
+
+def pprowno(a, h):
+    c = a * h
+    return c
+
+x = input('Wybierz co chcesz obliczyc\n>kwadrat - 1\n>trójkąt - 2\n>romb - 3\n>równoległobok - 4\n> ')
+
+if x == '1':
+    a = (int(input('Długość boku\n>')))
+    wynik = ppkwadrat(a)
+elif x == '2':
+    a = (int(input('Długość podstawy\n>')))
+    h = (int(input('Wysokość\n>')))
+    wynik = pptrojkat(a, h)
+elif x == '3':
+    f = (int(input('Długość pierwszej przekątnej\n>')))
+    e = (int(input('Długość drugiej przekątnej\n>')))
+    wynik = ppromb(e, f)
+elif x == '4':
+    a = (int(input('Długość podstawy\n>')))
+    h = (int(input('Wysokość\n>')))
+    wynik = pprowno(a, h)
+print('Twój wynik to: ', int(wynik))
